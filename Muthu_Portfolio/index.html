@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muthu Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/fav-icon1.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6fb69cefc0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="header">
+                     
+        <nav class="navbar flex">
+            <div class="navbar_logo">
+                <a href="#" class="nav_logo">Muthu Krishnan</a>
+            </div>
+
+            <div class="nav_menu" id="nav_menu">
+                  
+                <ul class="nav_list">
+
+                    <li class="nav_items">
+                        <a href="#about" class="nav_link active">About</a>
+                    </li>
+
+                    <li class="nav_items">
+                        <a href="#projects" class="nav_link active">Projects</a>
+                    </li>
+
+                    <li class="nav_items">
+                        <a href="#contact" class="nav_link active">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="nav_toggle" id="nav_toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+                  
+        </nav>
+
+   </header>
+
+   <main class="main">
+
+        <section class="home flex">
+            
+            <div class="home_data">
+
+                <div>
+                    <h3 class="profession">Software Developer</h3>
+                </div>
+
+                <div>
+                    <h1 class="name">Hello, My Name is Muthu Krishnan R</h1>
+                </div>
+                
+                <div>
+                    <h2 class="section_content">An aspiring developer skilled in C, Java, HTML, CSS, JavaScript, and SQL. Passionate about building innovative solutions and creating web applications and backend systems.</h2>
+                </div>
+
+                <div class="home_btns">
+                    <button class="project_btn"> <a href="#projects">Projects</a> </button>
+                    <button class="linkedIn_btn"><a href="https://www.linkedin.com/in/muthu-krishnan-r-593aa5210/" target="_blank">LinkedIn</a></button>
+                </div>
+
+            </div>
+
+            <div class="home_img">
+                <img src="images/Muthu.png" class="my_img1">
+            </div>
+            
+            
+        </section>
+
+        <section class="projects" id="projects">
+
+            <div class="projects-container">
+
+                <h3 class="section-heading">Projects</h3>
+
+                <div class="project_cards">
+
+                    <div class="card">
+
+                        <div class="card-container">
+                            <div class="card-aligner">
+                                <div class="card-content">
+                                    <h1 class="cd-heading">Weather Card</h1>
+                                    <h1 class="cd-explanation">Developed a responsive front-end web page for a  weather application using HTML, CSS, and JavaScript.</h1>
+                                    <button class="cd-button"> <a href="https://muthu1629.github.io/Weather%20App/index.html" target="_blank">View Project</a> </button>
+                                </div>
+                                <div class="card-img">
+                                    <img src="images/weather-card.png" alt="weather-card Image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="card-aligner">
+                                <div class="card-content">
+                                    <h1 class="cd-heading">Bus Ticket Reservation</h1>
+                                    <h1 class="cd-explanation">Developed a Bus Ticket Reservation System using Java, JDBC and MySQL for backend functionality.</h1>
+                                    <button class="cd-button"> <a href="https://github.com/Muthu1629/Projects/tree/main/Bus%20Reservation%20Java" target="_blank">View Project</a> </button>
+                                </div>
+                                <div class="card-img">
+                                    <img src="images/BusTicket.png" alt="Bus-Ticket Image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="card-aligner">
+                                <div class="card-content">
+                                    <h1 class="cd-heading">Gaming HUB</h1>
+                                    <h1 class="cd-explanation">I created this personal project in order to show how to create an interface in web using a portfolio as an example.</h1>
+                                    <button class="cd-button"> <a href="#projects">View Project</a> </button>
+                                </div>
+                                <div class="card-img">
+                                    <img src="images/Gaming-hub.png" alt="Gaming-hub">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="about" id="about">
+
+            <div class="about-container flex">
+                
+                <div class="about-content">
+
+                    <h1 class="about-heading">About me</h1>
+                    
+                    <h2 class="about-description">I am a dedicated aspiring software engineer with a strong foundation in programming and development. Skilled in Java, HTML, CSS, and JavaScript, I am passionate about problem-solving and improving skills to contribute effectively.</h2>
+                    
+                    <div>
+                        <button class="about-btn"> <a href="files/Muthu Krishnan.R.pdf" download="Muthu Resume" target="_blank">Resume</a> </button>
+                    </div>
+
+                </div>
+
+                <div class="about-img">
+                    
+                    <img src="images/Muthu4.png" alt="Muthu Image">
+                
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+
+            <div class="contact-container">
+
+                <h3 class="section-heading">Contact</h3>
+
+                <div class="form-content">
+
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact_form">
+
+                        <input type="hidden" name="access_key" value="38cdea9d-d791-407b-a9c4-f5d73e09e9da">
+
+                        <label for="name" class="contact-font">Name</label><br>
+                        <input type="text" name="name" id="name" class="input-field contact-font" required><br>
+                        
+                        <label for="mail" class="contact-font">Email</label><br>
+                        <input type="mail" name="email" id="mail" class="input-field contact-font" required><br>
+
+                        <label for="message" class="contact-font">Message</label><br>
+                        <textarea name="message" id="message" cols="0" rows="10" class="input-field message contact-font" required></textarea><br>
+
+                        <button type="submit" class="contact-btn">Send</button>
+
+                        <input type="hidden" name="redirect" value=""> 
+
+                   </form>
+
+                </div>
+
+
+            </div>
+            
+        </section>
+
+   </main>
+
+   <footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-socials">
+
+          <a href="https://www.instagram.com/muthu_3_krish/" target="_blank" class="footer-icon"> <i class="fa-brands fa-instagram"></i> </a>
+          <a href="https://www.linkedin.com/in/muthu-krishnan-r-593aa5210/" target="_blank" class="footer-icon"> <i class="fa-brands fa-linkedin"></i> </a>
+          <a href="mailto:sprmk1629@gmail.com" target="_blank" class="footer-icon"> <i class="fa-solid fa-envelope"></i> </a>
+
+        </div>
+        
+        <h1 class="footer-copyright">&copy; R Muthu Krishnan 2024</h1>
+
+    </div>
+
+    <div class="footer-img">
+        <img src="images/footer-Image.png" alt="footer-Image">
+    </div>
+
+   </footer>
+
+   <script src="script.js"></script>
+</body>
+</html>
