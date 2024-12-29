@@ -171,6 +171,7 @@ body{
     padding: 1rem 0px 1rem 7rem;
     min-width: 450px;
     flex: 1;
+    max-height: 800px;
 }
 .home_data div{
     margin-top: 32px;
