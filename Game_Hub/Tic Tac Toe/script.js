@@ -1,6 +1,4 @@
 const cells = document.querySelectorAll(".cell");
-const playerX = document.querySelectorAll("player-x");
-const playerO = document.querySelectorAll("player-o");
 const currentPlayer = document.querySelector(".current-player");
 const winner = document.querySelector(".winner");
 const popup = document.querySelector(".popup-container");
@@ -43,7 +41,9 @@ function tapCell(cell, index){
         isGameStart = true;
         updateCell(cell, index);
         checkWinner();
-        changePlayer();
+        if (!isPauseGame) { 
+            changePlayer();
+        }
     }
 }
 
@@ -107,7 +107,9 @@ function restartGame(){
     cells.forEach(cell => {
         cell.textContent = '';
         cell.classList.remove('winning-cell');
-    })
+    });
+    player = 'X';
+    currentPlayer.innerHTML = `<span class="player-x">X</span>'s Turn`;
     isGameStart = false;
     isPauseGame = false;
     popup.classList.remove("show");
@@ -115,4 +117,5 @@ function restartGame(){
 
 function closePopup(){
     popup.classList.remove("show");
+    restartGame();
 }
