@@ -63,6 +63,7 @@ function checkWinner(){
     for(const [a,b,c] of winConditions){
         if(inputCells[a] == player && inputCells[b] == player && inputCells[c] == player){
             declareWinner([a, b, c]);
+            return;
         }
     }
     if(inputCells.every((cell) => cell != '')){
