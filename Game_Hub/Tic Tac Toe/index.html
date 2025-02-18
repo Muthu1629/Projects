@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <script src="https://kit.fontawesome.com/6fb69cefc0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/tic_tac_toe.png">
+</head>
+<body>
+    <div class="game-container">
+
+        <div class="game-header flex">
+            <div class="player-info">
+                <p>
+                    <span class="player-x">X</span>
+                    <span class="player-o">O</span>
+                </p>
+            </div>
+            <div class="turn-indicator">
+                <p class="current-player ">
+                    <span class="player-x">X</span>'s Turn
+                </p>
+            </div>
+            <div class="restart-game" onclick="restartGame()">
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+        </div>
+    
+        <div class="game-board grid">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+    
+        <div class="game-footer">
+            <div class="scoreboard">
+                <div class="score-box">
+                    <p>Player <span class="player-x">X</span></p>
+                    <p class="win-count x-win-count">0</p>
+                </div>
+                <div class="score-box">
+                    <p>Draw</p>
+                    <p class="win-count draw-count">0</p>
+                </div>
+                <div class="score-box">
+                    <p>Player <span class="player-o">O</span></p>
+                    <p class="win-count o-win-count">0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-container">
+            <div class="closeBtn" onclick="closePopup()">
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <div class="popup-content">
+                <div class="winner-content">
+                    <p class="winner"><span class="player-x">X</span> Wins 🎉!! </p>
+                </div>
+                <div class="restart">
+                    <button class="restart-btn" onclick="restartGame()"> Restart <i class="fa-solid fa-rotate-right"></i> </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
