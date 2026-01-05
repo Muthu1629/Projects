@@ -1,23 +1,44 @@
 
-document.querySelector(".contact_form").addEventListener("submit", function(event) {
-    event.preventDefault(); 
+const contact = document.querySelector(".contact_form");
+contact.addEventListener("submit", async function(event) {
+    event.preventDefault();
 
-    const form = event.target;
-    const formData = new FormData(form);
+    const name = document.getElementById("name").value;
+    const mail = document.getElementById("mail").value;
+    const message = document.getElementById("message").value;
 
-    fetch(form.action, {
-        method: form.method,
-        body: formData,
-    });
+    const body = {
+        name: name,
+        email: mail,
+        message: message
+    }
 
-    document.querySelectorAll(".input-field").forEach((input) => {
-        input.value = "";
-    });
+    try{
+        const response = await fetch("https://mail-sender-api-10114431154.development.catalystappsail.com/send",{
+            method:"POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(body)
+        });
 
-    document.querySelectorAll(".input-field .message").forEach((textarea) => {
-        textarea.value = "";
-    });
+        const data = await response.json();
+
+        if(response.ok){
+            alert(data.message);
+            contact.reset();
+        }
+        else{
+            alert(data.message);
+        }
+    }
+    catch (error){
+        console.error(error);
+        alert("Server Error");
+    }
+
 });
+
 
 // Active Link
 
@@ -48,4 +69,5 @@ window.addEventListener('scroll', () => {
         header.style.backgroundColor = "transparent";
     }
 });
+
 
